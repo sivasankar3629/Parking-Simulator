@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3252708031380553635}
   - component: {fileID: 6538789978974336315}
   - component: {fileID: 4013467062136164405}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Van_Door_r_Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7339968159069033335}
   - component: {fileID: 3284475352423792062}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Van_Wheel_fr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,9 +169,9 @@ GameObject:
   - component: {fileID: 166435145065066226}
   - component: {fileID: 5719613512420633042}
   - component: {fileID: 8373154862102889073}
-  - component: {fileID: 4207861371077261496}
+  - component: {fileID: 4483801723849362363}
   - component: {fileID: 10742315155524011}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Van
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -199,6 +199,8 @@ Transform:
   - {fileID: 5980079662664366519}
   - {fileID: 967460146859391293}
   - {fileID: 7796581405093688667}
+  - {fileID: 5912364117852988782}
+  - {fileID: 4492384808856479668}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90.101, z: 0}
 --- !u!33 &166435145065066226
@@ -281,8 +283,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &4207861371077261496
-BoxCollider:
+--- !u!64 &4483801723849362363
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -299,9 +301,10 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.107141, y: 1.6613061, z: 4.7959557}
-  m_Center: {x: -0.000036537633, y: 1.1967541, z: 0.096876144}
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 97982d8a36ff16f4a88f291ef2443e49, type: 3}
 --- !u!114 &10742315155524011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,6 +320,8 @@ MonoBehaviour:
   _throttleStrength: 150
   _breakStrength: 2000
   _maxTurn: 30
+  _maxVelocity: 20
+  _vehVelocity: 0
   _throttleWheel:
   - {fileID: 4661180534729577457}
   - {fileID: 3284475352423792062}
@@ -330,8 +335,13 @@ MonoBehaviour:
   - {fileID: 6398051756880648958}
   - {fileID: 8135553810230266591}
   - {fileID: 5059264729817540665}
-  _CM: {fileID: 0}
-  _carRb: {fileID: 0}
+  _idleWheelCollider: []
+  _idleWheelMeshes: []
+  _CM: {fileID: 4492384808856479668}
+  _carRb: {fileID: 8373154862102889073}
+  _playerBoundary:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &2775558128776612667
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,7 +351,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5980079662664366519}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,6 +377,37 @@ Transform:
   - {fileID: 4038949551283946517}
   m_Father: {fileID: 3369330367399695999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3170091332268988079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4492384808856479668}
+  m_Layer: 7
+  m_Name: CM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4492384808856479668
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3170091332268988079}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.71, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3369330367399695999}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3296467776917426844
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,7 +423,7 @@ GameObject:
   - component: {fileID: 4344073192665014657}
   - component: {fileID: 1608459870169836349}
   - component: {fileID: 2968244313040960183}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FreeLook Camera (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -397,7 +438,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3296467776917426844}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.1294698, y: 0.0015903187, z: -0.0002076473, w: -0.9915821}
+  m_LocalRotation: {x: 0.12946981, y: -0.0015902872, z: 0.00020764802, w: 0.9915821}
   m_LocalPosition: {x: 0.0000004656613, y: 2.37, z: -3.9999988}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -576,7 +617,8 @@ MonoBehaviour:
       Owner: {fileID: 5311182079532401462}
       Enabled: 1
       Input:
-        InputAction: {fileID: -5630151704836100654, guid: 1d6e640e716dc4ff6989b73d02023f2b, type: 3}
+        InputAction: {fileID: -5630151704836100654, guid: 1d6e640e716dc4ff6989b73d02023f2b,
+          type: 3}
         Gain: 1
         LegacyInput: 
         LegacyGain: 1
@@ -589,7 +631,8 @@ MonoBehaviour:
       Owner: {fileID: 5311182079532401462}
       Enabled: 1
       Input:
-        InputAction: {fileID: -5630151704836100654, guid: 1d6e640e716dc4ff6989b73d02023f2b, type: 3}
+        InputAction: {fileID: -5630151704836100654, guid: 1d6e640e716dc4ff6989b73d02023f2b,
+          type: 3}
         Gain: -1
         LegacyInput: 
         LegacyGain: 1
@@ -602,7 +645,8 @@ MonoBehaviour:
       Owner: {fileID: 5311182079532401462}
       Enabled: 1
       Input:
-        InputAction: {fileID: 5082991133974614888, guid: 1d6e640e716dc4ff6989b73d02023f2b, type: 3}
+        InputAction: {fileID: 5082991133974614888, guid: 1d6e640e716dc4ff6989b73d02023f2b,
+          type: 3}
         Gain: -1
         LegacyInput: 
         LegacyGain: 1
@@ -639,7 +683,7 @@ GameObject:
   - component: {fileID: 6847353670975210352}
   - component: {fileID: 593888358094257230}
   - component: {fileID: 5107486173606760050}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Van_SteeringW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -725,7 +769,7 @@ GameObject:
   - component: {fileID: 5181236650078735950}
   - component: {fileID: 2153633656486822985}
   - component: {fileID: 1384935867015160834}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Van_Door_l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -812,7 +856,7 @@ GameObject:
   - component: {fileID: 8303064668591419544}
   - component: {fileID: 3579062419015763540}
   - component: {fileID: 1347158732919528260}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Van_Door_r
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -899,7 +943,7 @@ GameObject:
   - component: {fileID: 2584066972882348712}
   - component: {fileID: 5332664775173459821}
   - component: {fileID: 4500826834888619684}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Van_Plates
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -985,7 +1029,7 @@ GameObject:
   - component: {fileID: 4038949551283946517}
   - component: {fileID: 4626235874220685083}
   - component: {fileID: 1986907592609408742}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Van_Wheel_rr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1071,7 +1115,7 @@ GameObject:
   - component: {fileID: 2620349954029168667}
   - component: {fileID: 20432869361821623}
   - component: {fileID: 7948087783690826776}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Van_Door_l_Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1156,7 +1200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2869169715444963076}
   - component: {fileID: 8982924960207095366}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Van_Wheel_rr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1228,7 +1272,7 @@ GameObject:
   - component: {fileID: 8124216194225856025}
   - component: {fileID: 2638690257019835401}
   - component: {fileID: 8779910451421979965}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Van_Wheel_fr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1313,7 +1357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8013840888789508737}
   - component: {fileID: 2173473648565169620}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Van_Wheel_rl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1384,7 +1428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7434644122507693049}
   - component: {fileID: 4661180534729577457}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Van_Wheel_fl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1456,7 +1500,7 @@ GameObject:
   - component: {fileID: 2354480627511952450}
   - component: {fileID: 3717404297798513692}
   - component: {fileID: 2809536231989951320}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Van_Wheel_rl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1542,7 +1586,7 @@ GameObject:
   - component: {fileID: 4100742550004481332}
   - component: {fileID: 4673944101976781098}
   - component: {fileID: 6075755870200122726}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Van_Wheel_fl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1628,7 +1672,7 @@ GameObject:
   - component: {fileID: 7199545438225421022}
   - component: {fileID: 5008680540308904481}
   - component: {fileID: 2495008501865650347}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Van_Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1712,7 +1756,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 967460146859391293}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1738,3 +1782,77 @@ Transform:
   - {fileID: 2869169715444963076}
   m_Father: {fileID: 3369330367399695999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2300726725482005075
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3369330367399695999}
+    m_Modifications:
+    - target: {fileID: 4832685511641327549, guid: 514ec7031dc01de44a44d9650bbc0295,
+        type: 3}
+      propertyPath: m_Name
+      value: Arrow_Waypoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 5611833763819349821, guid: 514ec7031dc01de44a44d9650bbc0295,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5611833763819349821, guid: 514ec7031dc01de44a44d9650bbc0295,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.964
+      objectReference: {fileID: 0}
+    - target: {fileID: 5611833763819349821, guid: 514ec7031dc01de44a44d9650bbc0295,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5611833763819349821, guid: 514ec7031dc01de44a44d9650bbc0295,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5611833763819349821, guid: 514ec7031dc01de44a44d9650bbc0295,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5611833763819349821, guid: 514ec7031dc01de44a44d9650bbc0295,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5611833763819349821, guid: 514ec7031dc01de44a44d9650bbc0295,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5611833763819349821, guid: 514ec7031dc01de44a44d9650bbc0295,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5611833763819349821, guid: 514ec7031dc01de44a44d9650bbc0295,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5611833763819349821, guid: 514ec7031dc01de44a44d9650bbc0295,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 514ec7031dc01de44a44d9650bbc0295, type: 3}
+--- !u!4 &5912364117852988782 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5611833763819349821, guid: 514ec7031dc01de44a44d9650bbc0295,
+    type: 3}
+  m_PrefabInstance: {fileID: 2300726725482005075}
+  m_PrefabAsset: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5041696071616399323}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 2708491952634239722}
   - component: {fileID: 4597302379493788699}
   - component: {fileID: 50031118622090815}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Speedometer_Needle_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 5801471948864089931}
   - component: {fileID: 7008230710892285711}
   - component: {fileID: 958691302602000380}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FreeLook Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,7 +330,8 @@ MonoBehaviour:
       Owner: {fileID: 9080152565979081061}
       Enabled: 1
       Input:
-        InputAction: {fileID: -5630151704836100654, guid: 1d6e640e716dc4ff6989b73d02023f2b, type: 3}
+        InputAction: {fileID: -5630151704836100654, guid: 1d6e640e716dc4ff6989b73d02023f2b,
+          type: 3}
         Gain: 1
         LegacyInput: 
         LegacyGain: 1
@@ -343,7 +344,8 @@ MonoBehaviour:
       Owner: {fileID: 9080152565979081061}
       Enabled: 1
       Input:
-        InputAction: {fileID: -5630151704836100654, guid: 1d6e640e716dc4ff6989b73d02023f2b, type: 3}
+        InputAction: {fileID: -5630151704836100654, guid: 1d6e640e716dc4ff6989b73d02023f2b,
+          type: 3}
         Gain: -1
         LegacyInput: 
         LegacyGain: 1
@@ -356,7 +358,8 @@ MonoBehaviour:
       Owner: {fileID: 9080152565979081061}
       Enabled: 1
       Input:
-        InputAction: {fileID: 5082991133974614888, guid: 1d6e640e716dc4ff6989b73d02023f2b, type: 3}
+        InputAction: {fileID: 5082991133974614888, guid: 1d6e640e716dc4ff6989b73d02023f2b,
+          type: 3}
         Gain: -1
         LegacyInput: 
         LegacyGain: 1
@@ -393,7 +396,7 @@ GameObject:
   - component: {fileID: 7187140332576902791}
   - component: {fileID: 8914586112671300225}
   - component: {fileID: 578701085274834723}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Pedal_Short_03 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -479,7 +482,7 @@ GameObject:
   - component: {fileID: 7738550113391486305}
   - component: {fileID: 2543530729204258253}
   - component: {fileID: 1763576434235288623}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Tyre_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,7 +566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4171438624032564122}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_Meshes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -600,7 +603,7 @@ GameObject:
   - component: {fileID: 195282443767199092}
   - component: {fileID: 5668061076605284620}
   - component: {fileID: 1197203087363792943}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_Mesh_RL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -687,7 +690,7 @@ GameObject:
   - component: {fileID: 8390096487886894211}
   - component: {fileID: 2153667293326252021}
   - component: {fileID: 1662934019041507299}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Speedometer_01 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -774,7 +777,7 @@ GameObject:
   - component: {fileID: 5564703472181859351}
   - component: {fileID: 3372842206143233526}
   - component: {fileID: 5747907464624682593}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Gear_Stick_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -860,7 +863,7 @@ GameObject:
   - component: {fileID: 3557749239424886165}
   - component: {fileID: 8684281199699643890}
   - component: {fileID: 3021999272685223541}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Gear_Stick_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -946,7 +949,7 @@ GameObject:
   - component: {fileID: 2700521033294195061}
   - component: {fileID: 8131035880581820503}
   - component: {fileID: 5974675515791767440}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_SteeringW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1031,7 +1034,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5249784545717497509}
   - component: {fileID: 1564352199384752493}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WheelCollider_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1106,9 +1109,9 @@ GameObject:
   - component: {fileID: 469851793547942179}
   - component: {fileID: 7085825385691044536}
   - component: {fileID: 8167469623535057168}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_Preset_02 (1)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1278,6 +1281,8 @@ MonoBehaviour:
   _throttleStrength: 100
   _breakStrength: 2000
   _maxTurn: 25
+  _maxVelocity: 20
+  _vehVelocity: 0
   _throttleWheel:
   - {fileID: 1564352199384752493}
   - {fileID: 7880264267255847044}
@@ -1291,8 +1296,13 @@ MonoBehaviour:
   - {fileID: 5821590596953812018}
   - {fileID: 1200693239645235974}
   - {fileID: 3437896893557255985}
+  _idleWheelCollider: []
+  _idleWheelMeshes: []
   _CM: {fileID: 0}
   _carRb: {fileID: 0}
+  _playerBoundary:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &2824990940682867472
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,7 +1314,7 @@ GameObject:
   - component: {fileID: 4077881976027541973}
   - component: {fileID: 4446436595498135539}
   - component: {fileID: 8828660300880506136}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Rollcage_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1390,7 +1400,7 @@ GameObject:
   - component: {fileID: 414505008859082119}
   - component: {fileID: 951811680632706622}
   - component: {fileID: 4368315690600946616}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Spoiler_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1476,7 +1486,7 @@ GameObject:
   - component: {fileID: 8414095242327552514}
   - component: {fileID: 8254025044189053383}
   - component: {fileID: 1513106713320746742}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Mirror_01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1562,7 +1572,7 @@ GameObject:
   - component: {fileID: 3049593817772814466}
   - component: {fileID: 703319778761677551}
   - component: {fileID: 8095633308797116019}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Handbrake_Slot_01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1648,7 +1658,7 @@ GameObject:
   - component: {fileID: 2030394675715320672}
   - component: {fileID: 6131803847200816539}
   - component: {fileID: 8598700180440227296}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Wiper_01_Blade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1734,7 +1744,7 @@ GameObject:
   - component: {fileID: 6868671783784382386}
   - component: {fileID: 7946607437740818844}
   - component: {fileID: 6124412432228575082}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Speedometer_Needle_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1820,7 +1830,7 @@ GameObject:
   - component: {fileID: 2711732019734856379}
   - component: {fileID: 1370713039092968137}
   - component: {fileID: 2105849625615122069}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_Mesh_RR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1907,7 +1917,7 @@ GameObject:
   - component: {fileID: 3285853839450927711}
   - component: {fileID: 1088247131374998533}
   - component: {fileID: 7862488840997662087}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Seat_01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1993,7 +2003,7 @@ GameObject:
   - component: {fileID: 4194618809453892354}
   - component: {fileID: 1713410684793351819}
   - component: {fileID: 2122771434996595248}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Rear_Bumper_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2079,7 +2089,7 @@ GameObject:
   - component: {fileID: 510977828824877087}
   - component: {fileID: 4106769799217625387}
   - component: {fileID: 962854177464527489}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_E_Brake_03 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2165,7 +2175,7 @@ GameObject:
   - component: {fileID: 2676526810585404025}
   - component: {fileID: 441829203178474665}
   - component: {fileID: 4614440605707061354}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Boot_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2253,7 +2263,7 @@ GameObject:
   - component: {fileID: 8959280746032131261}
   - component: {fileID: 8922686057716870753}
   - component: {fileID: 2458408064599940582}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_Mesh_FL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2340,7 +2350,7 @@ GameObject:
   - component: {fileID: 3323513622671892377}
   - component: {fileID: 7258738783078954930}
   - component: {fileID: 3422456077500627082}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Wiper_01 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2427,7 +2437,7 @@ GameObject:
   - component: {fileID: 9054650132624911229}
   - component: {fileID: 2423267267821046597}
   - component: {fileID: 1152098907072890779}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Pedal_Long_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2513,7 +2523,7 @@ GameObject:
   - component: {fileID: 4819395059225184608}
   - component: {fileID: 2278281247091457807}
   - component: {fileID: 7066059194424644238}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Seats_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2599,7 +2609,7 @@ GameObject:
   - component: {fileID: 407133940079745073}
   - component: {fileID: 5572249414302151980}
   - component: {fileID: 953165843963196942}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Steering_Wheel_08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2684,7 +2694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 658544062201302733}
   - component: {fileID: 4753359607283800024}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WheelCollider_RL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2756,7 +2766,7 @@ GameObject:
   - component: {fileID: 2236189502072703012}
   - component: {fileID: 6321111131284889094}
   - component: {fileID: 1551219340754137657}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Pedal_Short_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2842,7 +2852,7 @@ GameObject:
   - component: {fileID: 6840781023428967202}
   - component: {fileID: 7261923524909729436}
   - component: {fileID: 6681019797119295172}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Undercarriage_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2928,7 +2938,7 @@ GameObject:
   - component: {fileID: 1427613005943934732}
   - component: {fileID: 867360336665323069}
   - component: {fileID: 1955559438071859957}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Door_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3015,7 +3025,7 @@ GameObject:
   - component: {fileID: 5185220181836385301}
   - component: {fileID: 2928632773575255144}
   - component: {fileID: 6469930672756939618}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Door_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3102,7 +3112,7 @@ GameObject:
   - component: {fileID: 5416522178825640334}
   - component: {fileID: 8238666385187596979}
   - component: {fileID: 4712322229984860306}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Windscreen_Sticker_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3188,7 +3198,7 @@ GameObject:
   - component: {fileID: 3471943449805003589}
   - component: {fileID: 5712280090975813131}
   - component: {fileID: 1648099286980169020}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Front_Bumper_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3274,7 +3284,7 @@ GameObject:
   - component: {fileID: 138424619842353577}
   - component: {fileID: 6239859084370908699}
   - component: {fileID: 3682752090392077880}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel_Mesh_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3361,7 +3371,7 @@ GameObject:
   - component: {fileID: 8941114087818505124}
   - component: {fileID: 7743597803617619494}
   - component: {fileID: 387355568208434773}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Engine_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3447,7 +3457,7 @@ GameObject:
   - component: {fileID: 2692339864341698360}
   - component: {fileID: 5156043097249287861}
   - component: {fileID: 5138625329211773767}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Fenders_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3533,7 +3543,7 @@ GameObject:
   - component: {fileID: 448641406480774301}
   - component: {fileID: 8412614288416980857}
   - component: {fileID: 6642544541748559253}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Speedometer_01 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3620,7 +3630,7 @@ GameObject:
   - component: {fileID: 6168422894980639921}
   - component: {fileID: 6553529948996875515}
   - component: {fileID: 4202444983352714797}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Spoiler_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3706,7 +3716,7 @@ GameObject:
   - component: {fileID: 1162705712662911004}
   - component: {fileID: 8478797085250695508}
   - component: {fileID: 4777656055512892275}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Tyre_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3792,7 +3802,7 @@ GameObject:
   - component: {fileID: 8042681662353133830}
   - component: {fileID: 6410439166863097481}
   - component: {fileID: 6267553867762056113}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Door_L_Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3878,7 +3888,7 @@ GameObject:
   - component: {fileID: 7151062273392103610}
   - component: {fileID: 3552438760965058748}
   - component: {fileID: 5763686005545635495}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Wiper_01_Blade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3963,7 +3973,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1406583426432585144}
   - component: {fileID: 7880264267255847044}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WheelCollider_FR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4035,7 +4045,7 @@ GameObject:
   - component: {fileID: 7881266526886078769}
   - component: {fileID: 4620860444433453157}
   - component: {fileID: 1243166060748201674}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Bonnet_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4121,7 +4131,7 @@ GameObject:
   - component: {fileID: 5688534054499919587}
   - component: {fileID: 2801138644707368444}
   - component: {fileID: 6884016971763670234}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Wiper_01 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4208,7 +4218,7 @@ GameObject:
   - component: {fileID: 388303031781596663}
   - component: {fileID: 6899322783057267212}
   - component: {fileID: 4874576207614621597}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Door_R_Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4294,7 +4304,7 @@ GameObject:
   - component: {fileID: 1481716822073012864}
   - component: {fileID: 3619165721052364099}
   - component: {fileID: 5075590163433718240}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Tyre_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4380,7 +4390,7 @@ GameObject:
   - component: {fileID: 8279716378239512260}
   - component: {fileID: 4138934798883687334}
   - component: {fileID: 785961607907361148}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Side_Skirts_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4465,7 +4475,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8357976216620207910}
   - component: {fileID: 4742810590897546137}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WheelCollider_RR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4537,7 +4547,7 @@ GameObject:
   - component: {fileID: 200463050373172598}
   - component: {fileID: 2047977390694649125}
   - component: {fileID: 6046398765889701522}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Seat_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4623,7 +4633,7 @@ GameObject:
   - component: {fileID: 680968536360912875}
   - component: {fileID: 9051097110453161235}
   - component: {fileID: 1408022668338445677}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Attach_Tyre_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4709,7 +4719,7 @@ GameObject:
   - component: {fileID: 4471817123621390949}
   - component: {fileID: 5692234866500574290}
   - component: {fileID: 989217552907153071}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Sports_01_Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4629224029227205209}
   - component: {fileID: 4646372245356314051}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Small_Wheel_rr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8686709854421706238}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 1368085465615426996}
   - component: {fileID: 3815982001654032317}
   - component: {fileID: 7782617970660507070}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FreeLook Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +315,8 @@ MonoBehaviour:
       Owner: {fileID: 8464451575510944394}
       Enabled: 1
       Input:
-        InputAction: {fileID: -5630151704836100654, guid: 1d6e640e716dc4ff6989b73d02023f2b, type: 3}
+        InputAction: {fileID: -5630151704836100654, guid: 1d6e640e716dc4ff6989b73d02023f2b,
+          type: 3}
         Gain: 1
         LegacyInput: 
         LegacyGain: 1
@@ -328,7 +329,8 @@ MonoBehaviour:
       Owner: {fileID: 8464451575510944394}
       Enabled: 1
       Input:
-        InputAction: {fileID: -5630151704836100654, guid: 1d6e640e716dc4ff6989b73d02023f2b, type: 3}
+        InputAction: {fileID: -5630151704836100654, guid: 1d6e640e716dc4ff6989b73d02023f2b,
+          type: 3}
         Gain: -1
         LegacyInput: 
         LegacyGain: 1
@@ -341,7 +343,8 @@ MonoBehaviour:
       Owner: {fileID: 8464451575510944394}
       Enabled: 1
       Input:
-        InputAction: {fileID: 5082991133974614888, guid: 1d6e640e716dc4ff6989b73d02023f2b, type: 3}
+        InputAction: {fileID: 5082991133974614888, guid: 1d6e640e716dc4ff6989b73d02023f2b,
+          type: 3}
         Gain: -1
         LegacyInput: 
         LegacyGain: 1
@@ -377,7 +380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4882677082636243580}
   - component: {fileID: 8635351270057972437}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Small_Wheel_fl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -449,7 +452,7 @@ GameObject:
   - component: {fileID: 8553015920116940840}
   - component: {fileID: 418881777252595131}
   - component: {fileID: 3820365508388845880}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Small_Wheel_fl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,7 +536,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5515300037926424639}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wheel Meshes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -569,7 +572,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6500567417934317193}
   - component: {fileID: 934633975619853962}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Small_Wheel_fr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -641,7 +644,7 @@ GameObject:
   - component: {fileID: 4081441361181961566}
   - component: {fileID: 2981176582485756171}
   - component: {fileID: 1365047332476202188}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Small_Wheel_fr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -727,7 +730,7 @@ GameObject:
   - component: {fileID: 8781721263943095245}
   - component: {fileID: 6382660048759433628}
   - component: {fileID: 7941319655059654358}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Small_Wheel_rl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -813,7 +816,7 @@ GameObject:
   - component: {fileID: 5191693583274053908}
   - component: {fileID: 4736488351972874426}
   - component: {fileID: 788243592033891877}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Small_Plates
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -898,7 +901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1660697170524604002}
   - component: {fileID: 6726742937282805507}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Small_Wheel_rl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -970,7 +973,7 @@ GameObject:
   - component: {fileID: 2675915252602864959}
   - component: {fileID: 5231950812818992940}
   - component: {fileID: 7160829700696459650}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Small_Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1056,7 +1059,7 @@ GameObject:
   - component: {fileID: 2620486051338421726}
   - component: {fileID: 8291396243505391868}
   - component: {fileID: 6954656444015269003}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Small_SteeringW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1142,7 +1145,7 @@ GameObject:
   - component: {fileID: 5704392990807536182}
   - component: {fileID: 9003482640130312040}
   - component: {fileID: 2734028691136241681}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Veh_Car_Small_Wheel_rr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1231,7 +1234,7 @@ GameObject:
   - component: {fileID: 4694977979623353162}
   - component: {fileID: 235856512360764130}
   - component: {fileID: 7758720244104500656}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Small Car
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1375,6 +1378,8 @@ MonoBehaviour:
   _throttleStrength: 100
   _breakStrength: 2000
   _maxTurn: 35
+  _maxVelocity: 20
+  _vehVelocity: 0
   _throttleWheel:
   - {fileID: 8635351270057972437}
   - {fileID: 934633975619853962}
@@ -1388,5 +1393,10 @@ MonoBehaviour:
   - {fileID: 5451981381139778381}
   - {fileID: 6555240551473213513}
   - {fileID: 8747717154276235806}
+  _idleWheelCollider: []
+  _idleWheelMeshes: []
   _CM: {fileID: 0}
   _carRb: {fileID: 0}
+  _playerBoundary:
+    serializedVersion: 2
+    m_Bits: 64

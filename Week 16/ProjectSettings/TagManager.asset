@@ -5,16 +5,16 @@ TagManager:
   serializedVersion: 3
   tags:
   - ParkingSpace
-  - enemy
+  - Waypoint
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - AICars
   - Water
   - UI
-  - 
-  - 
+  - PlayerBoundaries
+  - Player
   - 
   - 
   - 
