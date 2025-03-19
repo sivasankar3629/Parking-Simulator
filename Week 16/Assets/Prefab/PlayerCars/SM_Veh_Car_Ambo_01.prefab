@@ -518,9 +518,9 @@ GameObject:
   - component: {fileID: 5512491741086564212}
   - component: {fileID: 896047083304128311}
   - component: {fileID: 7521281832738435357}
-  - component: {fileID: 4634650483089219205}
   - component: {fileID: 8755268765472473466}
   - component: {fileID: 5450004786539668925}
+  - component: {fileID: 75317175018309104}
   m_Layer: 7
   m_Name: SM_Veh_Car_Ambo_01
   m_TagString: Player
@@ -606,28 +606,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4634650483089219205
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1879144019817247562}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 916b5bf2becb29f46b894a059d247f38, type: 3}
 --- !u!54 &8755268765472473466
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -672,6 +650,7 @@ MonoBehaviour:
   _maxTurn: 35
   _maxVelocity: 20
   _vehVelocity: 0
+  _rbVelocity: 0
   _throttleWheel:
   - {fileID: 958379030217780269}
   - {fileID: 1041144298546903455}
@@ -692,6 +671,27 @@ MonoBehaviour:
   _playerBoundary:
     serializedVersion: 2
     m_Bits: 64
+--- !u!65 &75317175018309104
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879144019817247562}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.0970268, y: 2.0855193, z: 5.0355988}
+  m_Center: {x: -0.02889061, y: 1.3587594, z: 0.12243652}
 --- !u!1 &1933955204843407944
 GameObject:
   m_ObjectHideFlags: 0

@@ -878,6 +878,7 @@ MonoBehaviour:
   _maxTurn: 35
   _maxVelocity: 20
   _vehVelocity: 0
+  _rbVelocity: 0
   _throttleWheel:
   - {fileID: 4595559526918163889}
   - {fileID: 8322013167012447796}
@@ -894,7 +895,7 @@ MonoBehaviour:
   _idleWheelCollider: []
   _idleWheelMeshes: []
   _CM: {fileID: 0}
-  _carRb: {fileID: 0}
+  _carRb: {fileID: 4380735992600784744}
   _playerBoundary:
     serializedVersion: 2
     m_Bits: 64

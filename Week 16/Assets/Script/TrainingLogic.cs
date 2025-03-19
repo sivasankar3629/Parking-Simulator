@@ -37,6 +37,7 @@ public class TrainingLogic : MonoBehaviour
             _throttleText.SetActive(false);
             _brakeText.SetActive(true);
             StartCoroutine(SlowMotion(KeyCode.Space));
+            Destroy(other.gameObject);
 
         }
 
@@ -45,12 +46,14 @@ public class TrainingLogic : MonoBehaviour
             //StartCoroutine(SlowMotion(KeyCode.Space));
             _steeringText.SetActive(false);
             _tutorialCompleteText.SetActive(true);
+            Destroy(other.gameObject);
         }
 
         if (other.gameObject == _finishCollider)
         {
             StartCoroutine(CrossFade.Instance.LoadLevel(2));
             Debug.Log("Tutorial Complete");
+            Destroy(other.gameObject);
         }
     }
 

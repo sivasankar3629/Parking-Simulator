@@ -1216,7 +1216,7 @@ MonoBehaviour:
   _sideSensorAngle: 45
   _playerBoundary:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &2481351475016842772
 MonoBehaviour:
   m_ObjectHideFlags: 0

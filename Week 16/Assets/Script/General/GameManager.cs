@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
         gameOver = true;
         Time.timeScale = 0f;
         _gameOverImage.sprite = _gameWonSprite;
-        _levelText.text = $"LEVEL {SceneManager.GetActiveScene().buildIndex + 1}";
+        _levelText.text = $"LEVEL {SceneManager.GetActiveScene().buildIndex - 1}";
         _statusText.text = "COMPLETED";
         _gameOverPanel.SetActive(true);
     }
@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
         gameOver = true;
         Time.timeScale = 0f;
         _gameOverImage.sprite = _gameLostSprite;
-        _levelText.text = $"LEVEL {SceneManager.GetActiveScene().buildIndex + 1}";
+        _levelText.text = $"LEVEL {SceneManager.GetActiveScene().buildIndex - 1}";
         _statusText.text = "FAILED";
         _gameOverPanel.SetActive(true);
     }
@@ -57,26 +57,26 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         _pauseMenuPanel.SetActive(false);
         StartCoroutine(CrossFade.Instance.LoadLevel(SceneManager.GetActiveScene().buildIndex));
     }
 
     public void HomePage()
     {
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         StartCoroutine(CrossFade.Instance.LoadLevel(0));
     }
 
     public void NextLevel()
     {
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         StartCoroutine(CrossFade.Instance.LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
     public void LoadLevel(int level)
     {
-        Time.timeScale = 1f;
+        //Time.timeScale = 1f;
         StartCoroutine(CrossFade.Instance.LoadLevel(level + 1));
     }
 }

@@ -24,6 +24,7 @@ public class CrossFade : MonoBehaviour
 
     public IEnumerator LoadLevel(int levelIndex)
     {
+        Time.timeScale = 1f;
         _transitionAnimator.SetTrigger("Start");
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(levelIndex);

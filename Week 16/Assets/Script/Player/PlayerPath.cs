@@ -44,7 +44,7 @@ public class PlayerPath : MonoBehaviour
         if (other.gameObject == _checkpoints[0].gameObject)
         {
             _checkpoints.Remove(_checkpoints[0]);
-            Destroy(other.gameObject, 2f);
+            Destroy(other.gameObject, 0.5f);
         }
     }
 }

@@ -13,6 +13,7 @@ public class CarController : MonoBehaviour
     [SerializeField] float _maxTurn = 25f;
     [SerializeField] float _maxVelocity = 15f;
     [SerializeField] float _vehVelocity;
+    [SerializeField] float _rbVelocity;
 
     [SerializeField] List<WheelCollider> _throttleWheel;
     [SerializeField] List<WheelCollider> _steerWheel;
@@ -88,7 +89,7 @@ public class CarController : MonoBehaviour
             _wheelMesh[i].transform.position = pos;
             _wheelMesh[i].transform.rotation = rot;
 
-            
+            _rbVelocity = Mathf.Abs(_carRb.linearVelocity.magnitude);
         }
 
         for ( int i = 0; i < _idleWheelCollider.Count; i++)
@@ -119,8 +120,13 @@ public class CarController : MonoBehaviour
         if (!collision.collider.CompareTag("ParkingSpace") && collision.collider.gameObject.layer != _playerBoundary)
         {
             GameManager.Instance.GameLost();
-            Debug.Log("Game Over");
+            Debug.Log(collision.collider.name);
         }
+    }
+
+    public float Velocity()
+    {
+        return _rbVelocity;
     }
 
 }
